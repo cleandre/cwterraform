@@ -9,12 +9,6 @@ terraform {
 
 }
 
-resource azurerm_resource_group rgtestname {
- name = "testrgforstate"
- location = "westus2"
-}
-
-
 output rgoutput {
  value = azurerm_resource_group.rgtestname
 }
